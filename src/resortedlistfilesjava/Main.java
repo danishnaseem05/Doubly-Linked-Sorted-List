@@ -193,7 +193,7 @@ public class Main {
         System.out.println("\n printing items of 'l2' ... ");
         l2.printList();
 
-        System.out.println("\nAdding one more item to 'l1' ... ");
+        System.out.println("\nAdding _40 to 'l1' ... ");
         Item _40 = new Item(40);
         l1.add(_40);
         System.out.println("\nNumber of items in 'l1': " + l1.getCount());
@@ -202,13 +202,30 @@ public class Main {
         System.out.println("\n'l1' Equals 'l2'? " + l1.equals(l2));
         System.out.println("'l2' Equals 'l1'? " + l2.equals(l1));
 
-        System.out.println("\nRemoved a element from 'l1' ... ");
+        System.out.println("\nRemoved _4000 from 'l1' ... ");
         l1.remove(_4000);
         System.out.println("\n'l1' Equals 'l2'? " + l1.equals(l2));
         System.out.println("'l2' Equals 'l1'? " + l2.equals(l1));
         System.out.println("\nNumber of items in 'l1': " + l1.getCount());
         System.out.println("Number of items in 'l2': " + l2.getCount());
 
+        System.out.println("\n printing items of 'l1' ... ");
+        l1.printList();
+        System.out.println("\n printing items of 'l2' ... ");
+        l2.printList();
+
+        System.out.println("\nRemoved _4000 from 'l2' ... ");
+        l2.remove(_4000);
+        System.out.println("\n Added _40 to 'l2'");
+        l2.add(_40);
+
+        System.out.println("\n printing items of 'l1' ... ");
+        l1.printList();
+        System.out.println("\n printing items of 'l2' ... ");
+        l2.printList();
+
+        System.out.println("\n'l1' Equals 'l2'? " + l1.equals(l2));
+        System.out.println("'l2' Equals 'l1'? " + l2.equals(l1));
 
         // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx //
 

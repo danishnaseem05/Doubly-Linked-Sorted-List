@@ -240,7 +240,15 @@ public class SortedList<T extends Comparable<T>> implements Iterable<T> {
 		SortedList<T> that = (SortedList<T>) obj;
 
 		if(this.getCount() != that.getCount()) return false;
-//		if(this.tail != that.tail) return false;
+
+		Iterator that_iterator = that.iterator();
+		Iterator this_iterator = this.iterator();
+
+		while(that_iterator.hasNext()){
+			if (that_iterator.next() != this_iterator.next()){
+				return false;
+			}
+		}
 
 		return true;
 	}
@@ -256,3 +264,4 @@ public class SortedList<T extends Comparable<T>> implements Iterable<T> {
 	}
 
 }
+
