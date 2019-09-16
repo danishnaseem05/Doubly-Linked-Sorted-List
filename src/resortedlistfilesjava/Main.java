@@ -26,6 +26,7 @@ public class Main {
 
 		SortedList<Item> L = new SortedList<>();
 		System.out.println("\nIs 'L' Empty? " + L.isEmpty());
+
 		L.add(_5);
 		L.add(_1);
 		L.add(_66);
