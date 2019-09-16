@@ -108,7 +108,7 @@ public class Main {
         B.add(_400);
         B.add(_104);
         B.add(_206);
-        B.add(_400_2); // added after _400, but since they are equal in val. _400_2 should be placed before _400
+        B.add(_400_2); // added after _400, but since they are their vals are equal. _400_2 should be placed before _400
                        // this will be shown by looking at their indexes
         B.add(_301);
 
