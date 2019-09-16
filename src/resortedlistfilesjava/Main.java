@@ -164,7 +164,6 @@ public class Main {
         System.out.println("\n'l1' Equals 'l1'? " + l1.equals(l1));
         System.out.println("'l2' Equals 'l2'? " + l2.equals(l2));
 
-
         l1.add(_3000);
         l1.add(_4000);
         l1.add(_1004);
