@@ -8,7 +8,7 @@ SortedList Class:
 - implemented the indexOf mehtod within the Sorted List class
 - implemented the iterator method within of the SortedList class.
 - added my own method of getCount inside the SortedList class for keeping track of the number of elements within the list, the count varible is private. It gets initialized to zero inside the default constructor, and gets set to the count of the argument list passed inside the second constructor. Later, count gets incremented inside the add method, decremented inside the remove method, and is used inside the equals method to compare the two object sizes. 
-- The equals method inside the SortedList class is under way. So far it is working for pretty much everything except comparing the exact elem values of each of the two objects.
+- implmented equals method within the SortedList class. (this was a challenge, but pretty much I utilized the iterator method within the SortedList class to compare the elements of each of the lists, using next method of the SortedListIterator class.  
 
 
 Item Class:
