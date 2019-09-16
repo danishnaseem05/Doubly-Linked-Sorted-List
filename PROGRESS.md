@@ -29,7 +29,7 @@ Node Class:
 
 Main Class:
 
-- added alot of tests within the main class
-	- each with their own description provided, either by comments or inside the terminal using print statements.
-
+- added various tests within the main class
+- testing the methods within the SortedList, SortedListIterator, Item, and Node classes.
+- each with their own description provided; either by comments or inside the terminal using print statements.
 - 
