@@ -35,7 +35,7 @@
 - added getters and setters for the Node class. It would be efficient to change the Node class elem, next, prev variables to be private, but I left them public as we were told not to change anything above the commented line.
 
 
-Main Class:
+## Main Class:
 
 - added various tests within the main class
 - testing the methods within the SortedList, SortedListIterator, Item, and Node classes.
