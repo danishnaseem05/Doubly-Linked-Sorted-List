@@ -32,7 +32,7 @@
 
 ## Node Class:
 
-- added getters and setters for the `Node` class. It would be efficient to change the Node class `elem`, `next`, `prev` variables to be private, but I left them public as we were told not to change anything above the commented line.
+- added *getters and setters* for the `Node` class. It would be efficient to change the Node class `elem`, `next`, `prev` variables to be private, but I left them public as we were told not to change anything above the commented line.
 
 
 ## Main Class:
