@@ -3,7 +3,7 @@ package resortedlistfilesjava;
 import java.util.Iterator;
 
 public class Main {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		/*
 		 * The test here is very simple one. You need to 
 		 * design your tests to test each and every functionality on 
