@@ -1,4 +1,12 @@
-SortedList Class:
+# Progress
+
+***Title:** Sorted Doubly Linked List*
+<br>
+***Author:** Danish Naseem*
+<br>
+***Language:** Java*
+
+## SortedList Class:
 
 - implemented the add method within the SortedList class
 - implemented both remove methods within the SortedList class. The remove with the elem argument further calls the other remove by the passing in the node argument, hence making it a little bit more efficient and non-duplicated code.
@@ -11,18 +19,18 @@ SortedList Class:
 - implmented equals method within the SortedList class. (this was a challenge, but pretty much I utilized the iterator method within the SortedList class to compare the elements of each of the lists, using next method of the SortedListIterator class.  
 
 
-Item Class:
+## Item Class:
 
 - implemented the compareTo method within the Item class. 
 
 
-SortedListIterator Class:
+## SortedListIterator Class:
 
 - implemented the construtor in the SortedListIterator class.
 - implemented the next and hasNext methods in the SortedListIterator class.
 
 
-Node Class:
+## Node Class:
 
 - added getters and setters for the Node class. It would be efficient to change the Node class elem, next, prev variables to be private, but I left them public as we were told not to change anything above the commented line.
 
