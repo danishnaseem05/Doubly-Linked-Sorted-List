@@ -9,34 +9,27 @@ import java.awt.event.ActionListener;
 import java.util.Iterator;
 import java.util.Random;
 
-public class GUI extends JFrame {
+public class MainFrame extends JFrame {
 
-    private JTextArea textArea;
+    private TextPanel textPanel;
     private JButton displayBtn;
     private JButton addBtn;
     private JButton removeBtn;
 
+    private SortedList<Integer> myList;
+    private Iterator<Integer> myListIt;
 
-    public static void main(String[] args) {
 
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new GUI();
-            }
-        });
-    }
-
-    public GUI(){
+    public MainFrame(){
         super("Sorted Doubly Linked List");
 
         setLayout(new BorderLayout());
-        SortedList<Integer> list = new SortedList<>();
+        myList = new SortedList<>();
         Random rand = new Random();
-        final Iterator<Integer>[] listIt = new Iterator[]{list.iterator()};
+        myListIt = myList.iterator();
 
 
-        textArea = new JTextArea();
+        textPanel = new TextPanel();
         displayBtn = new JButton("Display All List Items");
         displayBtn.setPreferredSize(new Dimension(50, 50));
 
@@ -47,13 +40,13 @@ public class GUI extends JFrame {
         displayBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(listIt[0].hasNext()){
-                    while(listIt[0].hasNext()){
-                        textArea.append(listIt[0].next() +"\n");
+                if(!myList.isEmpty()){
+                    while(myListIt.hasNext()){
+                        textPanel.appendText(myListIt.next() +"\n");
                     }
                 }
                 else{
-                    textArea.append("Sorry! the list is empty\n");
+                    textPanel.appendText("Sorry! the list is empty\n");
                 }
             }
         });
@@ -61,12 +54,12 @@ public class GUI extends JFrame {
        addBtn.addActionListener(new ActionListener() {
            @Override
            public void actionPerformed(ActionEvent e) {
-               list.add(rand.nextInt(100));
-               listIt[0] = list.iterator();
+               myList.add(rand.nextInt(100));
+               myListIt = myList.iterator();
            }
        });
 
-        add(textArea, BorderLayout.CENTER);
+        add(textPanel, BorderLayout.CENTER);
         add(displayBtn, BorderLayout.SOUTH);
         add(removeBtn, BorderLayout.LINE_END);
         add(addBtn, BorderLayout.LINE_START);
