@@ -11,4 +11,4 @@ execute the jar file in `out/artifacts/SortedUniqueDoublyLinkedList/SortedUnique
 - `Display All`: displays all the sorted integers stored within the list.
 - `Exit`: exits the program with exit code (0).
 
-*Refer to `PROGRESS.md` for complete progress report on the back-end of the actual list.*
+<br /><br />*Refer to `PROGRESS.md` for complete progress report on the back-end of the actual list.*
