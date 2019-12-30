@@ -14,7 +14,6 @@ public class MainFrame extends JFrame {
 
     private TextPanel textPanel;
     private Toolbar toolbar;
-
     private JButton displayBtn;
     private JButton addBtn;
     private JButton removeBtn;
@@ -26,7 +25,7 @@ public class MainFrame extends JFrame {
 
 
     public MainFrame(){
-        super("Sorted Doubly Linked List");
+        super("Custom Sorted Doubly Linked List");
         setLayout(new BorderLayout());
 
         myList = new SortedList<>();
@@ -37,27 +36,22 @@ public class MainFrame extends JFrame {
         textPanel = new TextPanel();
         toolbar = new Toolbar();
 
-        displayBtn = new JButton("Display All List Items");
-        displayBtn.setPreferredSize(new Dimension(50, 50));
-        removeBtn = new JButton("Remove");
-        addBtn = new JButton("Add");
+        add(displayBtn, BorderLayout.SOUTH);
+        add(removeBtn, BorderLayout.LINE_END);
+        add(addBtn, BorderLayout.LINE_START);
 
         setDisplayBtnActionListener();
         setAddBtnActionListener();
         setRemoveBtnActionListener();
 
-        add(toolbar, BorderLayout.NORTH);
+        add(toolbar, BorderLayout.SOUTH);
         add(textPanel, BorderLayout.CENTER);
-        add(displayBtn, BorderLayout.SOUTH);
-        add(removeBtn, BorderLayout.LINE_END);
-        add(addBtn, BorderLayout.LINE_START);
+
 
         setSize(600, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
-
-
 
     private void setDisplayBtnActionListener(){
         displayBtn.addActionListener(new ActionListener() {
@@ -91,6 +85,8 @@ public class MainFrame extends JFrame {
     private void setRemoveBtnActionListener() {
 
     }
+
+
 
 
 }
