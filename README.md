@@ -4,7 +4,7 @@
 
 ## Execute: 
 execute the jar file in `out/artifacts/SortedUniqueDoublyLinkedList/SortedUniqueIntegerDoublyLinkedList.jar`
-Or run `SortedListGUI.java` class from `src/resortedlistfilesjava/SortedListGUI.java`
+<br />Or run `SortedListGUI.java` class from `src/resortedlistfilesjava/SortedListGUI.java`
 
 ## Testing:
 test cases are given in `src/resortedlistfilesjava/Test.java`. Run `Test.java` for more info
