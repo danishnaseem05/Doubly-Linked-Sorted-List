@@ -11,4 +11,4 @@
 - `Exit`: exits the program with exit code (0).
 
 <br>
-Refer to `Progress.md` for complete progress report on the back-end of the actual list
+Refer to `Progress.md` for complete progress report on the back-end of the actual lis
