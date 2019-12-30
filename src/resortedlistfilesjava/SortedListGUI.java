@@ -75,7 +75,7 @@ public class SortedListGUI extends JFrame {
             }
             else{
                 myList.add(num);
-                textArea.append("Number " + num + " has been added to the list\n");
+                textArea.append("  Number " + num + " has been added to the list\n");
             }
         }
         catch(NumberFormatException e){
@@ -104,7 +104,7 @@ public class SortedListGUI extends JFrame {
             }
             else{
                 myList.remove(num);
-                textArea.append("Number " + num + " has been removed from the list\n");
+                textArea.append("  Number " + num + " has been removed from the list\n");
             }
         }
         catch(NumberFormatException e){
@@ -120,7 +120,7 @@ public class SortedListGUI extends JFrame {
             // Clear Text Area then append the elements of the list to it
             textArea.setText("");
             while(myListIt.hasNext()){
-                textArea.append(myListIt.next() + "\n");
+                textArea.append("  "+ myListIt.next() + "\n");
             }
         }
         else{
@@ -138,7 +138,7 @@ public class SortedListGUI extends JFrame {
     public static void main (String[] args){
 
         SortedListGUI app = new SortedListGUI ();
-        app.setSize                  (600, 600);
+        app.setSize                  (400, 400);
         app.setLocation              (450, 220);
         app.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         app.setVisible               (true);
