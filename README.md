@@ -6,9 +6,9 @@
 
 - Functions of the GUI:
 - `Add`: adds the given integer to the list, keeping it sorted; displays error if the integer already exists in the list.
-- `Delete`: deletes the given integer from the list of sorted integers; displays error if the integer doesn't exist
-- `Display All`: displays all the sorted integers stored within the list
+- `Delete`: deletes the given integer from the list of sorted integers; displays error if the integer doesn't exist.
+- `Display All`: displays all the sorted integers stored within the list.
 - `Exit`: exits the program with exit code (0).
 
 <br>
-Refer to `Progress.md` for complete progress report on the back-end of the actual lis
+Refer to `Progress.md` for complete progress report on the back-end of the actual list.
