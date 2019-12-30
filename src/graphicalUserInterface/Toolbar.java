@@ -1,4 +1,10 @@
 package graphicalUserInterface;
 
-public class Toolbar {
+import javax.swing.*;
+
+public class Toolbar extends JPanel {
+
+    public Toolbar(){
+
+    }
 }
