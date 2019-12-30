@@ -2,7 +2,7 @@ package resortedlistfilesjava;
 
 import java.util.Iterator;
 
-public class Main {
+public class Test {
 	public static void main(String[] args) {
 		/*
 		 * The test here is very simple one. You need to 
@@ -82,7 +82,10 @@ public class Main {
         System.out.println("Index of int 5 is: " + J.indexOf(5));
 
 		J.remove(3);
-		System.out.println("\nremoved 3 from 'J'. now printing ...");
+		System.out.println("\nremoved 3 from 'J ...");
+        System.out.println("Index of int 3 is: " + J.indexOf(3));
+
+        System.out.println("now printing 'J' ...");
 		J.printList();
 
 

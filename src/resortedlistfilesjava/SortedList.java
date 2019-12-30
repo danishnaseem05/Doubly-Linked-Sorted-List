@@ -21,7 +21,6 @@ public class SortedList<T extends Comparable<T>> implements Iterable<T> {
 	 * SortedList.
 	 */
 	public SortedList(SortedList<T> l) {
-		// TODO
 		Node<T> temp = l.head;
 
 		while(temp != null){
@@ -52,7 +51,6 @@ public class SortedList<T extends Comparable<T>> implements Iterable<T> {
 	 *     between the second 2 and 6.
 				*/
 		public void add(T elem) {
-			// TODO
 
 			// New node to be added. It is initiated with .next and .prev set to null
 			Node<T> node = new Node(elem);
@@ -122,10 +120,9 @@ public class SortedList<T extends Comparable<T>> implements Iterable<T> {
 	 *     look like: 1->6->11
 	 */
 	public void remove(T elem) {
-		// TODO
 		Node<T> current = this.head;
 
-		while(current.elem != elem){
+		while(! current.elem.equals(elem)){
 			current = current.getNext();
 			if(current == null){
 				break;
@@ -142,10 +139,17 @@ public class SortedList<T extends Comparable<T>> implements Iterable<T> {
 	 * NOTE: if the reference is "null", just return.
 	 */
 	public void remove(Node<T> n) {
-		// TODO
+
 		if(n == null){
 			return;
 		}
+
+		else if(n == head && getCount() == 1){
+			this.head = null;
+			this.tail = null;
+			this.count --;
+		}
+
 		else{
 			if(n.getPrev() != null && n.getNext() != null){
 				n.getPrev().setNext(n.getNext());
@@ -169,7 +173,6 @@ public class SortedList<T extends Comparable<T>> implements Iterable<T> {
 	 * Test whether the list is empty or not
 	 */
 	public boolean isEmpty() {
-		//TODO
 		return this.head == null;
 	}
 	
@@ -180,8 +183,6 @@ public class SortedList<T extends Comparable<T>> implements Iterable<T> {
 	 * 
 	 */
 	public Node<T> search(T elem) {
-
-		// TODO
 		Node<T> temp = this.head;
 		while(temp.getElem() != elem){
 			temp = temp.getNext();
@@ -196,11 +197,12 @@ public class SortedList<T extends Comparable<T>> implements Iterable<T> {
 	 * return -1 if it does not exist
 	 */
 	public int indexOf(T elem) {
-		// TODO
 		int counter = 0;
 		Node<T> temp = this.head;
 
-		while(temp.getElem() != elem){
+		if(temp == null) return -1;
+
+		while(!temp.getElem().equals(elem)){
 			temp = temp.getNext();
 			if(temp == null){
 				counter = -1;
@@ -220,7 +222,6 @@ public class SortedList<T extends Comparable<T>> implements Iterable<T> {
 		/*Might need to change this. We provided Default constructor 
 		 * to get rid of compiler errors
 		 * */
-		// TODO
 		return new SortedListIterator<>(this, this.head);
 	}
 
@@ -232,7 +233,6 @@ public class SortedList<T extends Comparable<T>> implements Iterable<T> {
 	 */
 	@Override
 	public boolean equals(Object obj) {
-		// TODO
 		if(this == obj) return true;
 		if(obj == null) return false;
 		if(this.getClass() != obj.getClass()) return false;

@@ -21,7 +21,6 @@ public class SortedListIterator<T extends Comparable<T>> implements Iterator<T> 
 	 */
 	@Override
 	public boolean hasNext() {
-		// TODO
 		return current != null;
 	}
 
@@ -32,7 +31,6 @@ public class SortedListIterator<T extends Comparable<T>> implements Iterator<T> 
 	 */
 	@Override
 	public T next() {
-		// TODO
 		T elem = current.getElem();
 		current = current.getNext();
 		return elem;
