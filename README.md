@@ -15,4 +15,4 @@ test cases are given in `src/resortedlistfilesjava/Test.java`. Run `Test.java` f
 - `Display All`: displays all the sorted integers stored within the list.
 - `Exit`: exits the program with exit code (0).
 
-<br /> <br /> *Refer to `PROGRESS.md` for complete progress report on the actual back-end sorted li
+<br /> <br /> *Refer to `PROGRESS.md` for complete progress report on the actual back-end sorted linked list*
