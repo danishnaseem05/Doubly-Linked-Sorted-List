@@ -14,3 +14,5 @@ test cases are given in `src/resortedlistfilesjava/Test.java`. Run `Test.java` f
 - `Delete`: deletes the given integer from the list of sorted integers; displays error if the integer doesn't exist.
 - `Display All`: displays all the sorted integers stored within the list.
 - `Exit`: exits the program with exit code (0).
+
+<br /> <br /> *Refer to `PROGRESS.md` for complete progress report on the actual back-end sorted linked list*
