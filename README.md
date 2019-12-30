@@ -3,8 +3,8 @@
 *Java implementation of the sorted doubly linked list and its iterator with GUI*
 
 ## Execute: 
-execute the jar file in `out/artifacts/SortedUniqueDoublyLinkedList/SortedUniqueIntegerDoublyLinkedList.jar`
-Or run `SortedListGUI.java` class from `src/resortedlistfilesjava/SortedListGUI.java`
+- execute the jar file in `out/artifacts/SortedUniqueDoublyLinkedList/SortedUniqueIntegerDoublyLinkedList.jar`
+- Or run `SortedListGUI.java` class from `src/resortedlistfilesjava/SortedListGUI.java`
 
 ## Testing:
 test cases are given in `src/resortedlistfilesjava/Test.java`. Run `Test.java` for more info
