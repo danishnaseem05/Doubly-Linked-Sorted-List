@@ -2,8 +2,12 @@
 
 *Java implementation of the sorted doubly linked list and its iterator with GUI*
 
-## To Launch: 
+## Execute: 
 execute the jar file in `out/artifacts/SortedUniqueDoublyLinkedList/SortedUniqueIntegerDoublyLinkedList.jar`
+Or run `SortedListGUI.java` class from `src/resortedlistfilesjava/SortedListGUI.java`
+
+## Testing:
+test cases are given in `src/resortedlistfilesjava/Test.java`. Run `Test.java` for more info
 
 ## Functions of the GUI:
 - `Add`: adds the given integer to the list, keeping it sorted; displays error if the integer already exists in the list.
