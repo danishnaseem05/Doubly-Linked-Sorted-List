@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SortedUniqueDoublyLinkedList">
+    <output-path>$PROJECT_DIR$/out/artifacts/SortedUniqueDoublyLinkedList</output-path>
+    <root id="archive" name="HW2.jar">
+      <element id="module-output" name="HW2" />
+    </root>
+  </artifact>
+</component>

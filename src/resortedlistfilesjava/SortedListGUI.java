@@ -49,7 +49,7 @@ public class SortedListGUI extends JFrame {
         addButton.addActionListener        (event -> addNumber ());
         deleteButton.addActionListener     (event -> deleteNumber ());
         displayAllButton.addActionListener (event -> displayAllNumbers ());
-        exitButton.addActionListener       (event -> exit ());
+        exitButton.addActionListener       (event -> exitApplication ());
 
     }
 
@@ -130,10 +130,8 @@ public class SortedListGUI extends JFrame {
     }
 
 
-    private void exit(){
-
-
-
+    private void exitApplication(){
+        System.exit (0); // Exit program with the code 0; OK.
     }
 
 
